@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(bg.jpg);
+}
+
+/* Header */
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.h1 {
+    font-size: 4em;
+    animation: fadeInDown 1.5s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.book-btn {
+    padding: 10px 10px;
+    background-color: #ff5733;
+    color: white;
+    border: black;
+    border-radius: 7px;
+    cursor: pointer;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.book-btn2 {
+    padding: 10px 10px;
+    background-color: #ff5733;
+    color: white;
+    border: black;
+    border-radius: 7px;
+    cursor: pointer;
+    animation: fadeInUp 1.5s ease-out;
+    margin-top: 700px;
+}
+
+/* Room Gallery */
+.room-gallery {
+    text-align: center;
+    padding: 10px;
+    animation: slideIn 1.5s ease-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.room {
+    background: aqua;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px black;
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-image: -moz-linear-gradient(url(delux.jpg));
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.center-button {
+    padding: 10px 20px;         /* Add some padding */
+    margin: 0 10px;             /* Margin around the button */
+    cursor: pointer;             /* Change cursor to pointer */
+    background-color: #007bff;  /* Button background color */
+    color: white;                /* Button text color */
+    border: none;                /* Remove default border */
+    border-radius: 5px;         /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}

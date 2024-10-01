@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label{
+            color: white;
+        }
+    </style>
+</head>
+<style>
+    .b1{
+        margin-left: 10px;
+        
+    }
+    
+    .b2{
+    margin-left: 10px;
+        width: 505px;
+    }
+    .b3{
+        margin-left: 10px;
+        width: 505px;
+    }
+    .b4{
+        margin-left: 23px;
+        width: 505px;
+    }
+    .b5{
+        margin-left: 102px;
+        width: 252px;
+    }
+    .b6{
+        width: 252px;
+    }
+    .b7{
+        margin-left: 20px;
+        width: 515px;
+    }
+    h2{
+        color: white;
+    }
+</style>
+
+
+<body >
+    <section class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form action="payment.html">
+           
+            <label for="checkin" >Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin">
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout">
+
+            <label for="guests">Guests:</label>
+            <input type="number" id="guests" name="guests" min="1"><br><br>
+
+            <label for="NAME">FULL NAME :</label>
+            <input class="b1" type="text" placeholder="FIRST"><input type="text" placeholder="MIDDLE"><input type="text" placeholder="LAST"><br><br>
+
+            <label for="email">EMAIL ADD :</label>
+            <input class="b2" type="text" placeholder="@gmail.com"><br><br>
+
+            <label for="phone">PHONE NO :</label>
+            <input class="b3" type="number" placeholder="MOB. NO."><br><br>
+
+            <label for="adress">ADDRESS :</label>
+            <input class="b4" type="text" placeholder="CURRENT ADDRESS"><br><br><input class="b5" type="text" placeholder="CITY"><input class="b6" type="number" placeholder="PIN CODE"><br><br>
+
+                    <div class="form-group">
+                        <label for="payment">PAYMENT :</label>
+                        <select class="b7" id="payment" required>
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="creditcard">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="Cash Payment">Cash Payment</option><br><br><br>
+                        </select>
+                    </div>
+                </form><br><br>
+        
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            <a href="payment.html" class="book-btn">PROCEED TO PAYMENT</a><br><br><br>
+            <a href="thanks.html" class="book-btn">Submit Booking</a>
+        </form>
+    </section>
+</body>
+</html>
